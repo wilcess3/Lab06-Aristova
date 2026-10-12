@@ -125,12 +125,12 @@
 
 
 //Задание 5
-Console.Write("Введите число (1 - 9): ");
-int n = Convert.ToInt32(Console.ReadLine());
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"{n} x {i} = {n * i}");
-}
+// Console.Write("Введите число (1 - 9): ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// for (int i = 1; i <= 10; i++)
+// {
+//     Console.WriteLine($"{n} x {i} = {n * i}");
+// }
 
 
 //Задание 6
@@ -143,48 +143,48 @@ for (int i = 1; i <= 10; i++)
 
 
 //Угадай число
-// int secret = 26;
-// int popitki = 5;
-// bool a = false;
-// for (int i = 1; i <= popitki; i++)
-// {
-//     Console.Write($"Попытка:  {i}");
-//     int chislo = Convert.ToInt32(Console.ReadLine());
+int secret = 26;
+int popitki = 5;
+bool a = false;
+for (int i = 1; i <= popitki; i++)
+{
+    Console.Write($"Попытка:  {i}");
+    int chislo = Convert.ToInt32(Console.ReadLine());
 
-//     if (chislo == secret)
-//     {
-//         Console.WriteLine($"Победа! Попыток : {i}");
-//         a = true;
-//         break;
-//     }
-//     else if (chislo > secret)
-//     {
-//         Console.WriteLine("Меньше!!!");
-//     }
-//     else
-//     {
-//         Console.WriteLine("Больше!!!");
-//     }
-// }
-// if (a == false)
-// {
-//     Console.WriteLine($"Вы проиграли, число было {secret}");
-// }
+    if (chislo == secret)
+    {
+        Console.WriteLine($"Победа! Попыток : {i}");
+        a = true;
+        break;
+    }
+    else if (chislo > secret)
+    {
+        Console.WriteLine("Меньше!!!");
+    }
+    else
+    {
+        Console.WriteLine("Больше!!!");
+    }
+}
+if (a == false)
+{
+    Console.WriteLine($"Вы проиграли, число было {secret}");
+}
 
 
 //Доп задание 
-Console.WriteLine("Введите целое полож число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите целое полож число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int suumm = 0;
-int countt = 0;
-while (num > 0)
-{
-    suumm += num % 10;
-    num /= 10;
-    countt++;
-}
-Console.WriteLine($"Сумма чисел: {suumm} ");
-Console.WriteLine($"Количество цифр: {countt} ");
+// int suumm = 0;
+// int countt = 0;
+// while (num > 0)
+// {
+//     suumm += num % 10;
+//     num /= 10;
+//     countt++;
+// }
+// Console.WriteLine($"Сумма чисел: {suumm} ");
+// Console.WriteLine($"Количество цифр: {countt} ");
 
 
